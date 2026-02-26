@@ -6,7 +6,12 @@ const baseUrl = 'https://chefs-a-porter-backend.onrender.com/v1'  //`https://che
 
 exports.onCreatePage =  async ({ actions, graphql }) => {
     const { createPage } = actions;
-    const EventsRequest = await axios(baseUrl + '/menu/?limit=1000')
+    const axiosConfig = {
+      headers: {
+          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OTllZDA0M2VlNGFjZWIwNjI3ZDk3MTciLCJpYXQiOjE3NzIxMzIwMjgsImV4cCI6MTc3MjEzNTYyOCwidHlwZSI6ImFjY2VzcyJ9.KRp2myW6-WLEAzNt9nvibXarkLl3b7FxK2FpLSUbnVo'
+      }
+    };
+    const EventsRequest = await axios(baseUrl + '/menu/?limit=1000', axiosConfig);
     EventsRequest.data.results.forEach((item)=>{
         createPage({
             path: `event-details/${item.id}/`,
