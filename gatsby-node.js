@@ -2,7 +2,7 @@ const path = require("path");
 const axios = require('axios');
 
 
-const baseUrl = `https://chefv2.hypervergedemo.site/v1`;
+const baseUrl = 'https://chefs-a-porter-backend.onrender.com/v1'  //`https://chefv2.hypervergedemo.site/v1`;
 
 exports.onCreatePage =  async ({ actions, graphql }) => {
     const { createPage } = actions;

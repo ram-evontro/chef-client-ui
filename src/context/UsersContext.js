@@ -413,7 +413,7 @@ const UsersProvider = (props) => {
         } else if (currentPath === 'become-partner') {
             axios.get(baseUrl + '/partner_master/all', {
                 headers: {
-                    'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTM1MWZmNmIzYjBmOTYxY2IxZGQxNjciLCJpYXQiOjE2ODE4MDAzNTIsImV4cCI6MTY4MTgwMzk1MiwidHlwZSI6ImFjY2VzcyJ9.hoOeT8frCQ_QH-83fPF-HxDKW1_vCTu0Vn55hWwloP0`
+                    'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OTllZDA0M2VlNGFjZWIwNjI3ZDk3MTciLCJpYXQiOjE3NzIxMzIwMjgsImV4cCI6MTc3MjEzNTYyOCwidHlwZSI6ImFjY2VzcyJ9.KRp2myW6-WLEAzNt9nvibXarkLl3b7FxK2FpLSUbnVo`
                 }
             }).then((response) => {
                 if (response.status === 200) {
@@ -422,7 +422,7 @@ const UsersProvider = (props) => {
             })
             axios.get(baseUrl + '/city/all', {
                 headers: {
-                    'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTM1MWZmNmIzYjBmOTYxY2IxZGQxNjciLCJpYXQiOjE2ODE4MDAzNTIsImV4cCI6MTY4MTgwMzk1MiwidHlwZSI6ImFjY2VzcyJ9.hoOeT8frCQ_QH-83fPF-HxDKW1_vCTu0Vn55hWwloP0`
+                    'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OTllZDA0M2VlNGFjZWIwNjI3ZDk3MTciLCJpYXQiOjE3NzIxMzIwMjgsImV4cCI6MTc3MjEzNTYyOCwidHlwZSI6ImFjY2VzcyJ9.KRp2myW6-WLEAzNt9nvibXarkLl3b7FxK2FpLSUbnVo`
                 }
             }).then((response) => {
                 if (response.status === 200) {

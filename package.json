@@ -109,5 +109,8 @@
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.7",
     "lodash": "^4.17.21"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
